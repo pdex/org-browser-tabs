@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "org-browser-tabs",
+  "description": "This extension tells emacs about your open tabs",
+  "version": "1.0",
+  "author": "pdex",
+  "icons": {
+    "48": "logo.png"
+  },
+  "background" : {
+    "scripts": ["main.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "org-browser-tabs",
+    "default_icon": {
+      "38":"logo.png"
+    },
+    "default_popup": "dashboard.html"
+  },
+  "permissions": [ "http://localhost:*/", "storage", "tabs" ],
+  "optional_permissions": [ "tabs" ],
+  "options_page": "options.html"
+}
